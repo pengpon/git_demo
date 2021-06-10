@@ -32,6 +32,27 @@ Digital signatures are a standard element of most cryptographic protocol suites,
 
 Digital signatures are often used to implement electronic signatures, which includes any electronic data that carries the intent of a signature,[2] but not all electronic signatures use digital signatures.[3][4] In some countries, including Canada,[5] South Africa,[6] the United States, Algeria,[7] Turkey, India,[8] Brazil, Indonesia, Mexico, Saudi Arabia,[9] Uruguay,[10] Switzerland, Chile[11] and the countries of the European Union,[12][13] electronic signatures have legal significance.
 
+This article is about a cryptosystem. For the company, see RSA Security.
+RSAGeneral
+Designers	Ron Rivest, Adi Shamir, and Leonard Adleman
+First published	1977
+Certification	PKCS#1, ANSI X9.31, IEEE 1363
+Cipher detail
+Key sizes	2,048 to 4,096 bit typical
+Rounds	1
+Best public cryptanalysis
+General number field sieve for classical computers;
+Shor's algorithm for quantum computers.
+An 829-bit key has been broken.
+
+RSA (Rivest–Shamir–Adleman) is a public-key cryptosystem that is widely used for secure data transmission. It is also one of the oldest. The acronym RSA comes from the surnames of Ron Rivest, Adi Shamir and Leonard Adleman, who publicly described the algorithm in 1977. An equivalent system was developed secretly, in 1973 at GCHQ (the British signals intelligence agency), by the English mathematician Clifford Cocks. That system was declassified in 1997.[1]
+
+In a public-key cryptosystem, the encryption key is public and distinct from the decryption key, which is kept secret (private). An RSA user creates and publishes a public key based on two large prime numbers, along with an auxiliary value. The prime numbers are kept secret. Messages can be encrypted by anyone, via the public key, but can only be decoded by someone who knows the prime numbers.[2]
+
+The security of RSA relies on the practical difficulty of factoring the product of two large prime numbers, the "factoring problem". Breaking RSA encryption is known as the RSA problem. Whether it is as difficult as the factoring problem is an open question.[3] There are no published methods to defeat the system if a large enough key is used.
+
+RSA is a relatively slow algorithm. Because of this, it is not commonly used to directly encrypt user data. More often, RSA is used to transmit shared keys for symmetric key cryptography, which are then used for bulk encryption-decryption. 
+
 Digital signatures employ asymmetric cryptography. In many instances they provide a layer of validation and security to messages sent through a non-secure channel: Properly implemented, a digital signature gives the receiver reason to believe the message was sent by the claimed sender. Digital signatures are equivalent to traditional handwritten signatures in many respects, but properly implemented digital signatures are more difficult to forge than the handwritten type. Digital signature schemes, in the sense used here, are cryptographically based, and must be implemented properly to be effective. Digital signatures can also provide non-repudiation, meaning that the signer cannot successfully claim they did not sign a message, while also claiming their private key remains secret. Further, some non-repudiation schemes offer a timestamp for the digital signature, so that even if the private key is exposed, the signature is valid.[14][15] Digitally signed messages may be anything representable as a bitstring: examples include electronic mail, contracts, or a message sent via some other cryptographic protocol. </span>
           </div>
         </li>
